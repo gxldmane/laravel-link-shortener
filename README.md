@@ -37,7 +37,7 @@ Contributions are welcome. If you'd like to contribute to this project, please f
 **License**
 ---------
 
-This project is licensed under the MIT License. See `LICENSE` for details.
+This project is licensed under the MIT License.
 
 **Acknowledgments**
 ----------------
