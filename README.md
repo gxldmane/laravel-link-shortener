@@ -23,7 +23,7 @@ laravel-link-shortener is a simple URL shortening application built using Larave
 ### Local Development
 
 1. Clone the repository: `git clone https://github.com/gxldmane/laravel-link-shortener.git`
-2. Navigate to the project directory: `cd ShortLinker`
+2. Navigate to the project directory: `cd laravel-link-shortener`
 3. Install dependencies: `composer install`
 4. Run Sail: `./vendor/bin/sail up`
 5. Run npm: `npm run dev`
