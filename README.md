@@ -1,9 +1,9 @@
-**ShortLinker**
+**laravel-link-shortener**
 
 **Overview**
 -----------
 
-ShortLinker is a simple URL shortening application built using Laravel, a popular PHP web framework. This project utilizes Laravel's Sail, a development environment that replaces Docker, for easy setup and deployment. The frontend is built with Blade, a templating engine provided by Laravel, and Tailwind CSS, a utility-first CSS framework.
+laravel-link-shortener is a simple URL shortening application built using Laravel, a popular PHP web framework. This project utilizes Laravel's Sail, a development environment that replaces Docker, for easy setup and deployment. The frontend is built with Blade, a templating engine provided by Laravel, and Tailwind CSS, a utility-first CSS framework.
 
 **Features**
 ------------
@@ -22,7 +22,7 @@ ShortLinker is a simple URL shortening application built using Laravel, a popula
 
 ### Local Development
 
-1. Clone the repository: `git clone https://github.com/your-username/ShortLinker.git`
+1. Clone the repository: `git clone https://github.com/gxldmane/laravel-link-shortener.git`
 2. Navigate to the project directory: `cd ShortLinker`
 3. Install dependencies: `composer install`
 4. Run Sail: `./vendor/bin/sail up`
