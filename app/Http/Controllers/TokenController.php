@@ -9,14 +9,15 @@ use Vinkla\Hashids\Facades\Hashids;
 
 class TokenController extends Controller
 {
-    public function create(StoreRequest $request, CreateShortLinkAction $action)
+    public function store(StoreRequest $request, CreateShortLinkAction $action)
     {
         $url = $request->validated()['url'];
 
         $token = Token::query()->where('original_link', $url)->first();
 
         if ($token) {
-            return $action->handle($token->short_link);
+            $shortUrl = $action->handle($token->short_link);
+            return view('url.show', compact('shortUrl'));
         }
 
         $shortUrl = Hashids::encode(rand());
@@ -26,7 +27,10 @@ class TokenController extends Controller
             'short_link' => $shortUrl
         ]);
 
-        return $action->handle($shortUrl);
+        $shortUrl = $action->handle($shortUrl);
+
+
+        return view('url.show', compact('shortUrl'));
     }
 
     public function show(string $shortUrl)

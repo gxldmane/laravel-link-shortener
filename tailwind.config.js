@@ -6,8 +6,20 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Reddit Sans', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+      themes: [
+          'sunset',
+          'cmyk'
+      ]
+  }
 }
 
